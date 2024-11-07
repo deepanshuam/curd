@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD To-Do List</title>
+</head>
+<body>
+    <form id="formm">
+        <label for="name">Todo Name:</label>
+        <input type="text" id="name">
+
+        <label for="description">Description:</label>
+        <input type="text" id="description">
+
+        <!-- Hidden input for storing the ID when editing -->
+        <input type="hidden" id="edit-id">
+
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>To-Do List</h2>
+    <ul id="todo-list"></ul>
+
+    <h2>Todos Done</h2>
+    <ul id="done-list"></ul>
+
+    <!-- Include Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
